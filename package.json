@@ -27,8 +27,7 @@
     "ava": "^3.10.1",
     "builtin-modules": "^3.1.0",
     "esm": "^3.2.25",
-    "rollup": "^2.21.0",
-    "str-fragment": "^1.1.2"
+    "rollup": "^2.21.0"
   },
   "typings": "types.d.ts",
   "ava": {
