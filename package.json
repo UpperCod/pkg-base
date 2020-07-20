@@ -5,6 +5,9 @@
   "type": "module",
   "main": "cjs.js",
   "module": "esm.js",
+  "publishConfig": {
+    "access": "public"
+  },
   "scripts": {
     "build": "rollup -c",
     "dev": "rollup -c -w",
