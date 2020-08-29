@@ -1,5 +1,3 @@
-/**
- *
- * @type  {import("./internal").example}
- */
-export function example(message) {}
+export function example(message) {
+    return message;
+}

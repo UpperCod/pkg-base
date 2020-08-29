@@ -1,4 +1,6 @@
 import test from "ava";
-import * as pkg from "../esm";
+import { example } from "../src";
 
-test("simple replace", async (t) => {});
+test("simple replace", async (t) => {
+    t.is(example("a"), "a");
+});
