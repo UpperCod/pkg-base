@@ -3,7 +3,7 @@
     "type": "module",
     "version": "0.0.0",
     "description": "Capture text fragments based on regular expressions that are executed for each line of the text",
-    "main": "./cjs/module.js",
+    "main": "./module.js",
     "module": "./src/module.js",
     "publishConfig": {
         "access": "public"
