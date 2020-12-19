@@ -1,4 +1,5 @@
 /node_modules
-/esm
-/cjs
 /package-lock.json
+/*.js
+/*.js.map
+!/rollup.config.js

@@ -1,9 +1,10 @@
 {
     "name": "pkg_name",
+    "type": "module",
     "version": "0.0.0",
     "description": "Capture text fragments based on regular expressions that are executed for each line of the text",
-    "main": "./cjs/index.js",
-    "module": "./esm/index.js",
+    "main": "./cjs/module.js",
+    "module": "./src/module.js",
     "publishConfig": {
         "access": "public"
     },
@@ -25,25 +26,20 @@
     "homepage": "https://github.com/UpperCod/pkg_name#readme",
     "dependencies": {},
     "devDependencies": {
-        "@rollup/plugin-node-resolve": "^8.1.0",
         "ava": "^3.10.1",
         "builtin-modules": "^3.1.0",
-        "esm": "^3.2.25",
         "rollup": "^2.21.0"
     },
     "typings": "types.d.ts",
     "ava": {
-        "require": [
-            "esm"
-        ],
         "files": [
-            "test/**/*.test.js"
+            "tests/**/*.test.js"
         ]
     },
     "exports": {
         "./": {
-            "import": "./ems/",
-            "require": "./cjs/"
+            "import": "./src/module.js",
+            "require": "./module.js"
         }
     },
     "prettier": {
