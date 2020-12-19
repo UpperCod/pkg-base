@@ -37,7 +37,7 @@
         ]
     },
     "exports": {
-        "./": {
+        ".": {
             "import": "./src/module.js",
             "require": "./module.js"
         }
