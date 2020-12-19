@@ -3,13 +3,13 @@
     "type": "module",
     "version": "0.0.0",
     "description": "Capture text fragments based on regular expressions that are executed for each line of the text",
-    "main": "./module.js",
+    "main": "./module.cjs",
     "module": "./src/module.js",
     "typings": "types.d.ts",
     "exports": {
         ".": {
             "import": "./src/module.js",
-            "require": "./module.js"
+            "require": "./module.cjs"
         }
     },
     "publishConfig": {
@@ -31,8 +31,8 @@
         "url": "https://github.com/UpperCod/pkg_name/issues"
     },
     "homepage": "https://github.com/UpperCod/pkg_name#readme",
-    "dependencies": {},
     "devDependencies": {
+        "@betit/rollup-plugin-rename-extensions": "^0.1.0",
         "ava": "^3.10.1",
         "builtin-modules": "^3.1.0",
         "rollup": "^2.21.0"
