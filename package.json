@@ -5,7 +5,7 @@
     "description": "Capture text fragments based on regular expressions that are executed for each line of the text",
     "main": "./module.cjs",
     "module": "./src/module.js",
-    "typings": "types.d.ts",
+    "typings": "./types.d.ts",
     "exports": {
         ".": {
             "import": "./src/module.js",
