@@ -1,10 +1,10 @@
 import pkg from "./package.json";
 
 export default {
-    input: ["./src/module.js"],
+    input: pkg.module,
     external: Object.keys(pkg.dependencies || {}),
     output: {
-        dir: "./",
+        file: pkg.main,
         format: "cjs",
         sourcemap: true,
     },
