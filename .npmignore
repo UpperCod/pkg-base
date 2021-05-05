@@ -1,4 +1,5 @@
 /node_modules
 /tests
-/jsconfig.json
+/tsconfig.json
 /rollup.config.js
+/.github

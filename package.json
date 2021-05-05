@@ -5,7 +5,7 @@
     "description": "Capture text fragments based on regular expressions that are executed for each line of the text",
     "main": "./module.cjs",
     "module": "./src/module.js",
-    "typings": "./types.d.ts",
+    "types": "./types.d.ts",
     "exports": {
         ".": {
             "import": "./src/module.js",
@@ -16,10 +16,11 @@
         "access": "public"
     },
     "scripts": {
+        "types": "tsc",
         "build": "rollup -c",
         "dev": "rollup -c -w",
         "test": "ava",
-        "prepare": "npm run build && npm test"
+        "prepare": "npm run build && npm run types && npm test"
     },
     "repository": {
         "type": "git",
@@ -32,10 +33,9 @@
     },
     "homepage": "https://github.com/UpperCod/pkg_name#readme",
     "devDependencies": {
-        "@betit/rollup-plugin-rename-extensions": "^0.1.0",
         "ava": "^3.10.1",
-        "builtin-modules": "^3.1.0",
-        "rollup": "^2.21.0"
+        "rollup": "^2.21.0",
+        "typescript": "^4.2.4"
     },
     "ava": {
         "files": [
