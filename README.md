@@ -1,9 +1,7 @@
-# pkg_name
+# @uppercod/<packages>
 
-bla bla....
+monorepo of plugins created by @uppercod for <packages>:
 
-## install
+### <packge>
 
-```
-npm install pkg_name
-```
+bla bla...
